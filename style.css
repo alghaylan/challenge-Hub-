@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.text h2{
+    font-weight: 600;
+    font-size: 21px;
+    color: hsl(229, 6%, 66%);
+    padding: 10px;
+   }
+h3{
+    font-size: 22px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin: 10px;
+}
+p{
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    line-height: 32px;
+}
+.card .imge{
+
+    margin-top: 20px;
+    margin-right: 0px;
+    text-align: right;  
+}
+footer{
+    display: none;
+}
+.card:nth-of-type(2){
+    border-top-color: hsl(180, 62%, 55%);
+}
+.card:nth-of-type(3){
+    border-top-color:hsl(0, 78%, 62%);
+}
+.card:nth-of-type(4){
+    border-top-color:hsl(34, 97%, 64%);
+}
+.card:nth-of-type(5){
+    border-top-color:hsl(212, 86%, 64%);
+}
+.title{
+    font-weight: 600;
+    font-size: 28px;
+}
+.card{
+  
+    padding: 35px;
+   margin: 30px auto; 
+   border-radius: 10px;
+  box-shadow: 1px 6px 20px -10px hsl(212, 86%, 64%);
+position: relative;
+
+}
+
+ .content .card1 {
+   border-top: 4px solid hsl(180, 62%, 55%);
+}
+ .center .card2{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+ .center .card3{
+    border-top:4px solid hsl(34, 97%, 64%);
+}
+.content .card4{
+    border-top:4px solid hsl(212, 86%, 64%);
+}
+.title{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+@media (max-width: 1440px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        margin: 50px auto;
+    }
+    .text{
+        width: 300px;
+        margin:  auto;
+       margin-bottom: 20px;
+    }
+    h2{
+        padding: 0px 10px;
+    }
+    h3{
+        margin-top: 0;
+    }
+    
+     p{
+        font-size: 9px;
+        width: 100%;
+        text-align: center;
+        line-height: 15px;
+    }
+  .content{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    margin:10px 30px;
+    gap: 15px;
+}
+.content .card{
+    padding: 10px;
+
+}
+.center{
+    margin: 10px;
+}
+}
+@media (max-width: 357px) {
+    .content, .center{
+     
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .card{
+        width: 100%;
+        margin: 2px;
+
+    }
+    .center{
+        width: 100%;
+        gap: 30px;
+    }
+   
+
+    }
+    
+}
